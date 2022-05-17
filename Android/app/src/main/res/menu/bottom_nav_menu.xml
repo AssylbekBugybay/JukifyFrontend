@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        android:enabled="true"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_party"
+        android:icon="@drawable/ic_party"
+        android:enabled="true"
+        android:title="Party"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/placeholder"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/ic_share"
+        android:title="Share"
+        app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="projects.THU.jukify">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".AddSongActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".old_PartyMemberActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".PartyMemberActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".PartyJoinActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".ViewHistoryActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity android:name=".ScanCode"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:stateNotNeeded="true"/>
+        <activity
+            android:name=".SettingsActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".PartyCreationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="true" />
+        <activity
+            android:name=".PartyHistoryActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PrototypeActivity"
+            android:exported="true" />
+        <activity android:name=".SpotifyLoginActivity">
+            <intent-filter>
+                <data
+                    android:host="asd"
+                    android:scheme="kek" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".SpotifyTokenBroadcast"/>
+
+    </application>
+
+</manifest>
